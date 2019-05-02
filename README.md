@@ -1,6 +1,6 @@
 # Quantifying network structural dissimilarities 
 
-##Tiago A. Schieber, Laura Carpi, Albert Díaz-Guilera, Panos M. Pardalos, Cristina Masoller and Martín G. Ravetti
+## Tiago A. Schieber, Laura Carpi, Albert Díaz-Guilera, Panos M. Pardalos, Cristina Masoller and Martín G. Ravetti
 
 For information regarding the dataset download, algorithm and codes please read the "readme.txt" file.
 
@@ -12,7 +12,7 @@ In this repository, you will find the codes and instances used in the article:
 Quantifying network structural dissimilarities by Tiago A. Schieber, Laura Carpi, Albert Díaz-Guilera, Panos M. Pardalos, Cristina Masoller and Martín G. Ravetti
 
 
-##Algorithm
+## Algorithm
 
 The algorithm is written in R and uses functions from the igraph library (The Network Analysis Package - http://igraph.org/). The program reads two graphs on an edge list format, the weights (w1, w2 and w3) and computes the D-distance, as discussed in the article. 
 
@@ -29,9 +29,9 @@ As discussed in the article, there is a significant computational drawback in us
 For example, d("net1.txt","net2.txt",0.45,0.45,0.1) computes the dissimilarity measure considering w1=0.45, w2=0.45 and w3=0.1 between the networks net1.txt and net2.txt in an edgelist format disconsidering the Jensen-Shannon between the alpha-centrality distribution of the graph's complement.
 
 
-##Instances for the non-isomorphic test
+## Instances for the non-isomorphic test
  
- The experiment consists in computing the D-distance between pairs of known non-isomorphic graphs.  
+The experiment consists in computing the D-distance between pairs of known non-isomorphic graphs.  
 
 ### Generation
 
@@ -41,7 +41,6 @@ Here, we use geng to generate all graphs of a specified class and showg to write
 Our distance returns a positive value for all the cases here considered.
 
 Some files are in 7zip format (see http://www.7-zip.org/ for more information).
-
 
 |Nodes| #graphs| Files |
 |:-------------:|:-------------:| -----:| 
@@ -53,12 +52,11 @@ Some files are in 7zip format (see http://www.7-zip.org/ for more information).
 |9|274668|[graph_n=9](https://drive.google.com/file/d/0B92qPSf2Wn1LNC1GX1RIdG1xUk0/view)|
 |10|12005168|[graph_n=10](https://drive.google.com/file/d/0B92qPSf2Wn1LNzVQQjJ2VjhRWFE/view)|
 
-
-20 Nodes
+#### 20 Nodes
 
 When considering 20 nodes, the complete set of non-isomorphic graphs has approximately 6.4 x 10^38 graphs. In this case, we focus on trees and connected k-regular graphs. 
 
-k-regular graphs
+#### k-regular graphs
 
 |k| # graphs|Files|
 |:------:|:-----:|:------:|
@@ -75,7 +73,7 @@ k-regular graphs
 |12| 14024101| [regular_graph_n=20_k=12](https://drive.google.com/file/d/0B92qPSf2Wn1LWWVkLTQ1Y3JMVzA/view)  (69 MB)
 
 
-Non-isomorphic connected trees
+#### Non-isomorphic connected trees
 
 
 |Nodes| # graphs| Files|
@@ -87,8 +85,7 @@ Non-isomorphic connected trees
  
 
 
-Contact information
+# Contact information
 
 Martin Gómez Ravetti - martin.ravetti at dep.ufmg.br
-
 Tiago Schieber - tischieber@gmail.com
